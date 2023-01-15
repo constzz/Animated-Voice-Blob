@@ -6,6 +6,7 @@ The project has folders for each of the custom components used:
 - Voice Blob
 - Color Picker
 - Gradient Slider
+
 And common utilities:
 - Utility
  
