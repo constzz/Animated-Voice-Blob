@@ -16,17 +16,17 @@ Each BlobNode will have the following fields to be initialized with:
 
 ```swift
 class BlobNode: UIView {  
-    init(  
-      pointsCount: Int,  
-      minRandomness: CGFloat,  
-      maxRandomness: CGFloat,  
-      minSpeed: CGFloat,  
-      maxSpeed: CGFloat,  
-      minScale: CGFloat,  
-      maxScale: CGFloat,  
-      scaleSpeed: CGFloat,  
-      isCircle: Bool  
-  ) ...  
+	init(  
+		pointsCount: Int,  
+		minRandomness: CGFloat,  
+		maxRandomness: CGFloat,  
+		minSpeed: CGFloat,  
+		maxSpeed: CGFloat,  
+		minScale: CGFloat,  
+		maxScale: CGFloat,  
+		scaleSpeed: CGFloat,  
+		isCircle: Bool  
+	) ...  
 }
 ``` 
     
@@ -67,13 +67,13 @@ After init, it already has configured and placed child blobs. Also, it set ups t
 ```swift
 // Init scope ...
 displayLinkAnimator = ConstantDisplayLinkAnimator() { [weak self] in  
-      guard let self = self else { return }  
-  
-      self.presentationAudioLevel = self.presentationAudioLevel * 0.9 + self.audioLevel * 0.1  
-  
-      self.smallBlob.level = self.presentationAudioLevel  
-      self.mediumBlob.level = self.presentationAudioLevel  
-      self.bigBlob.level = self.presentationAudioLevel  
+	guard let self = self else { return }  
+
+	self.presentationAudioLevel = self.presentationAudioLevel * 0.9 + self.audioLevel * 0.1  
+
+	self.smallBlob.level = self.presentationAudioLevel  
+	self.mediumBlob.level = self.presentationAudioLevel  
+	self.bigBlob.level = self.presentationAudioLevel  
 }
 // Init scope ...
 ```
@@ -83,11 +83,11 @@ The default VoiceBlobView configuration, used in the project is the following:
 
 ```swift
 VoiceBlobView(  
-      frame: .zero,  
-      maxLevel: 50,  
-      smallBlobRange: (0.40, 0.54),  
-      mediumBlobRange: (0.52, 0.87),  
-      bigBlobRange: (0.55, 1.00))
+	frame: .zero,  
+	maxLevel: 50,  
+	smallBlobRange: (0.40, 0.54),  
+	mediumBlobRange: (0.52, 0.87),  
+	bigBlobRange: (0.55, 1.00))
 ```
 
 By changing `pointsCount` and `isCircle` property of child blobs we may have the following results:
@@ -101,14 +101,15 @@ override func viewDidLoad {
 	animate()
 }
 
- private func animate() {  
-    DispatchQueue.main.asyncAfter(deadline: .now().advanced(by: .milliseconds(500))) { [weak self] in  
-      let randomValue = CGFloat.random(in: 10...50)  
-      self?.voiceBlob1.updateLevel(randomValue)  
-      self?.voiceBlob2.updateLevel(randomValue)  
-      self?.voiceBlob3.updateLevel(randomValue)  
-      self?.animate()  
-    }
+private func animate() {  
+	DispatchQueue.main.asyncAfter(deadline: .now().advanced(by: .milliseconds(500))) { [weak self] in  
+		let randomValue = CGFloat.random(in: 10...50)  
+		self?.voiceBlob1.updateLevel(randomValue)  
+		self?.voiceBlob2.updateLevel(randomValue)  
+		self?.voiceBlob3.updateLevel(randomValue)  
+		self?.animate()  
+	}
+}
 ```
 
 Instead of random values and time, this can be synced with the audio level. For example, for the user’s audio messages (like Telegram did) or playing video/audio content. 
