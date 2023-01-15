@@ -33,7 +33,7 @@ final class GradientSlider: UIControl {
 
   var thickness: CGFloat = Constants.defaultThickness {
     didSet {
-      trackLayer.cornerRadius = thickness / 2.0
+      trackLayer.cornerRadius = thickness/2.0
       self.layer.setNeedsLayout()
     }
   }
@@ -54,7 +54,7 @@ final class GradientSlider: UIControl {
 
   var thumbSize: CGFloat = Constants.defaultThumbSize {
     didSet {
-      thumbLayer.cornerRadius = thumbSize / 2.0
+      thumbLayer.cornerRadius = thumbSize/2.0
       thumbLayer.bounds = CGRect(x: 0, y: 0, width: thumbSize, height: thumbSize)
       self.invalidateIntrinsicContentSize()
     }
@@ -79,6 +79,7 @@ final class GradientSlider: UIControl {
     commonSetup()
   }
 
+  @available(*, unavailable)
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
@@ -123,10 +124,10 @@ extension GradientSlider {
 
     updateThumbPosition(animated: false)
   }
-
 }
 
 // MARK: - Touch tracking
+
 extension GradientSlider {
   override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
     let point = touch.location(in: self)
@@ -194,7 +195,6 @@ private extension GradientSlider {
   }
 }
 
-
 private extension GradientSlider {
   func valueForLocation(point: CGPoint) -> CGFloat {
     var left = self.bounds.origin.x
@@ -233,7 +233,6 @@ private extension GradientSlider {
     trackLayer.locations = locations as [NSNumber]
   }
 
-
   func updateThumbPosition(animated: Bool) {
     let diff = maximumValue - minimumValue
     let perc = CGFloat((value - minimumValue)/diff)
@@ -251,5 +250,4 @@ private extension GradientSlider {
       thumbLayer.position = CGPoint(x: left + (trackWidth * perc), y: halfHeight)
     }
   }
-
 }

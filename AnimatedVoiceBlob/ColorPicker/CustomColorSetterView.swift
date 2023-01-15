@@ -12,6 +12,7 @@ protocol CustomColorSetterView: UIView {
 }
 
 // MARK: - Implementations
+
 extension VoiceBlobView: CustomColorSetterView {
   func setNewCustomColor(_ color: UIColor?) {
     setColor(color ?? .clear, animated: true)

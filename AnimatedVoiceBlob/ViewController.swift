@@ -8,7 +8,6 @@
 import UIKit
 
 final class ViewController: ViewControllerWithStackInScroll {
-
   private enum PrefferedValues {
     static let stackInset: CGFloat = 20
     static let bulbHeight: CGFloat = 200
@@ -63,6 +62,7 @@ final class ViewController: ViewControllerWithStackInScroll {
     super.init()
   }
 
+  @available(*, unavailable)
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
@@ -76,19 +76,20 @@ final class ViewController: ViewControllerWithStackInScroll {
   }
 
   private func updateTintColor(_ color: UIColor) {
-    voiceBlobs.forEach({ voiceBlob in
+    voiceBlobs.forEach { voiceBlob in
       voiceBlob.setColor(color, animated: true)
-    })
+    }
     colorPickButton.tintColor = color.withAlphaComponent(0.8)
     startStopControl.selectedSegmentTintColor = color.withAlphaComponent(0.4)
   }
 }
 
 // MARK: - Animations
+
 private extension ViewController {
   private func animate() {
     DispatchQueue.main.asyncAfter(deadline: .now().advanced(by: .seconds(1))) { [weak self] in
-      let randomValue = CGFloat.random(in: 1...50)
+      let randomValue = CGFloat.random(in: 1 ... 50)
       self?.voiceBlobDefault.updateLevel(randomValue)
       self?.voiceBlobCircleOnly.updateLevel(randomValue)
       self?.voiceBlobDetailedCorners.updateLevel(randomValue)
@@ -97,19 +98,20 @@ private extension ViewController {
   }
 
   private func startBlobsAnimations() {
-    self.voiceBlobDefault.startAnimating()
-    self.voiceBlobCircleOnly.startAnimating()
-    self.voiceBlobDetailedCorners.startAnimating()
+    voiceBlobDefault.startAnimating()
+    voiceBlobCircleOnly.startAnimating()
+    voiceBlobDetailedCorners.startAnimating()
   }
 
   private func stopBlobsAnimations(duration: CGFloat = 1.0) {
-    self.voiceBlobDefault.stopAnimating(duration: duration)
-    self.voiceBlobCircleOnly.stopAnimating(duration: duration)
-    self.voiceBlobDetailedCorners.stopAnimating(duration: duration)
+    voiceBlobDefault.stopAnimating(duration: duration)
+    voiceBlobCircleOnly.stopAnimating(duration: duration)
+    voiceBlobDetailedCorners.stopAnimating(duration: duration)
   }
 }
 
 // MARK: - Layouting subviews
+
 private extension ViewController {
   func addVoiceBlob() {
     view.addSubview(voiceBlobDefault)
@@ -149,10 +151,10 @@ private extension ViewController {
     startStopControl.selectedSegmentIndex = 0
     startBlobsAnimations()
   }
-
 }
 
 // MARK: - Subviews factories
+
 private extension ViewController {
   func makeDefaultVoiceBlob() -> VoiceBlobView {
     return VoiceBlobView(
@@ -170,7 +172,7 @@ private extension ViewController {
     control.setAction(.init(title: "Start", handler: { [weak self] _ in
       self?.startBlobsAnimations()
     }), forSegmentAt: 0)
-    control.setAction(.init(title: "Pause", handler: {[weak self] _ in
+    control.setAction(.init(title: "Pause", handler: { [weak self] _ in
       self?.stopBlobsAnimations()
     }), forSegmentAt: 1)
     return control

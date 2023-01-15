@@ -68,11 +68,11 @@ public final class VoiceBlobView: UIView {
 
     super.init(frame: .zero)
 
-    self.addSubview(self.bigBlob)
-    self.addSubview(self.mediumBlob)
-    self.addSubview(self.smallBlob)
+    addSubview(bigBlob)
+    addSubview(mediumBlob)
+    addSubview(smallBlob)
 
-    displayLinkAnimator = ConstantDisplayLinkAnimator() { [weak self] in
+    self.displayLinkAnimator = ConstantDisplayLinkAnimator { [weak self] in
       guard let self = self else { return }
 
       self.presentationAudioLevel = self.presentationAudioLevel * 0.9 + self.audioLevel * 0.1
@@ -83,12 +83,13 @@ public final class VoiceBlobView: UIView {
     }
   }
 
+  @available(*, unavailable)
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
   public func setColor(_ color: UIColor) {
-    self.setColor(color, animated: false)
+    setColor(color, animated: false)
   }
 
   public func setColor(_ color: UIColor, animated: Bool) {
@@ -98,7 +99,7 @@ public final class VoiceBlobView: UIView {
   }
 
   public func updateLevel(_ level: CGFloat) {
-    self.updateLevel(level, immediately: false)
+    updateLevel(level, immediately: false)
   }
 
   public func updateLevel(_ level: CGFloat, immediately: Bool = false) {
@@ -115,7 +116,7 @@ public final class VoiceBlobView: UIView {
   }
 
   public func startAnimating() {
-    self.startAnimating(immediately: false)
+    startAnimating(immediately: false)
   }
 
   public func startAnimating(immediately: Bool = false) {
@@ -136,7 +137,7 @@ public final class VoiceBlobView: UIView {
   }
 
   public func stopAnimating() {
-    self.stopAnimating(duration: 0.15)
+    stopAnimating(duration: 0.15)
   }
 
   public func stopAnimating(duration: Double) {
@@ -152,8 +153,8 @@ public final class VoiceBlobView: UIView {
   }
 
   private func updateBlobsState() {
-    if self.isAnimating {
-      if self.smallBlob.frame.size != .zero {
+    if isAnimating {
+      if smallBlob.frame.size != .zero {
         smallBlob.startAnimating()
         mediumBlob.startAnimating()
         bigBlob.startAnimating()
@@ -168,10 +169,10 @@ public final class VoiceBlobView: UIView {
   override public func layoutSubviews() {
     super.layoutSubviews()
 
-    self.smallBlob.frame = bounds
-    self.mediumBlob.frame = bounds
-    self.bigBlob.frame = bounds
+    smallBlob.frame = bounds
+    mediumBlob.frame = bounds
+    bigBlob.frame = bounds
 
-    self.updateBlobsState()
+    updateBlobsState()
   }
 }

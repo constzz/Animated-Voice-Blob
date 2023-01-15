@@ -10,7 +10,7 @@ import UIKit
 final class BlobNode: UIView, CAAnimationDelegate {
   var pointsCount: Int {
     didSet {
-      self.smoothness = Self.smoothnessForPointsCount(pointsCount: pointsCount)
+      self.smoothness = Self.smoothnessForPointsCount(pointsCount: self.pointsCount)
     }
   }
 
@@ -66,7 +66,7 @@ final class BlobNode: UIView, CAAnimationDelegate {
     didSet {
       guard let currentPoints = currentPoints else { return }
 
-      shapeLayer.path = UIBezierPath.smoothCurve(through: currentPoints, length: bounds.width, smoothness: smoothness).cgPath
+      self.shapeLayer.path = UIBezierPath.smoothCurve(through: currentPoints, length: bounds.width, smoothness: self.smoothness).cgPath
     }
   }
 
@@ -106,7 +106,6 @@ final class BlobNode: UIView, CAAnimationDelegate {
     self.scaleSpeed = scaleSpeed
     self.isCircle = isCircle
 
-
     self.smoothness = Self.smoothnessForPointsCount(pointsCount: pointsCount)
 
     super.init(frame: .zero)
@@ -116,6 +115,7 @@ final class BlobNode: UIView, CAAnimationDelegate {
     self.shapeLayer.transform = CATransform3DMakeScale(minScale, minScale, 1)
   }
 
+  @available(*, unavailable)
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
@@ -137,15 +137,15 @@ final class BlobNode: UIView, CAAnimationDelegate {
   }
 
   private func animateToNewShape() {
-    if isCircle { return }
+    if self.isCircle { return }
 
     if self.shapeLayer.path == nil {
-      let points = nextBlob(for: self.bounds.size)
-      self.shapeLayer.path = UIBezierPath.smoothCurve(through: points, length: bounds.width, smoothness: smoothness).cgPath
+      let points = self.nextBlob(for: self.bounds.size)
+      self.shapeLayer.path = UIBezierPath.smoothCurve(through: points, length: bounds.width, smoothness: self.smoothness).cgPath
     }
 
-    let nextPoints = nextBlob(for: self.bounds.size)
-    let nextPath = UIBezierPath.smoothCurve(through: nextPoints, length: bounds.width, smoothness: smoothness).cgPath
+    let nextPoints = self.nextBlob(for: self.bounds.size)
+    let nextPath = UIBezierPath.smoothCurve(through: nextPoints, length: bounds.width, smoothness: self.smoothness).cgPath
 
     let animation = CABasicAnimation(keyPath: "path")
     let previousPath = self.shapeLayer.path
@@ -166,13 +166,13 @@ final class BlobNode: UIView, CAAnimationDelegate {
 
   func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
     if flag {
-      animateToNewShape()
+      self.animateToNewShape()
     }
   }
 
   private func nextBlob(for size: CGSize) -> [CGPoint] {
-    let randomness = minRandomness + (maxRandomness - minRandomness) * speedLevel
-    return Self.blob(pointsCount: pointsCount, randomness: randomness)
+    let randomness = self.minRandomness + (self.maxRandomness - self.minRandomness) * self.speedLevel
+    return Self.blob(pointsCount: self.pointsCount, randomness: randomness)
       .map {
         return CGPoint(
           x: $0.x * CGFloat(size.width),

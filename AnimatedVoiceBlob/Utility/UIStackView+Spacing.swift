@@ -13,6 +13,4 @@ extension UIStackView {
     addArrangedSubview(view)
     setCustomSpacing(spacing, after: view)
   }
-
 }
-

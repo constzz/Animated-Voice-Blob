@@ -7,9 +7,7 @@
 
 import UIKit
 
-
 extension UIAlertController {
-
   func setContentViewController(_ controller: UIViewController, width: CGFloat? = nil, height: CGFloat? = nil) {
     setValue(controller, forKey: "contentViewController")
     if let height = height {
@@ -17,14 +15,13 @@ extension UIAlertController {
       preferredContentSize.height = height
     }
   }
-  
+
   func setTitle(_ title: String, font: UIFont, color: UIColor) {
     self.title = title
     let attributes: [NSAttributedString.Key: Any] = [.font: font, .foregroundColor: color]
     let attributedTitle = NSMutableAttributedString(string: title, attributes: attributes)
     setValue(attributedTitle, forKey: "attributedTitle")
   }
-
 
   func addAction(
     image: UIImage? = nil,

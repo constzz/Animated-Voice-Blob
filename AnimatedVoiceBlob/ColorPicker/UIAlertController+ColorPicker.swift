@@ -12,7 +12,6 @@ private enum Constants {
 }
 
 extension UIAlertController {
-
   func addColorPicker(
     currentColor: UIColor = .clear,
     selection: @escaping ColorPickerViewController.Selection,

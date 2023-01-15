@@ -14,7 +14,7 @@ extension UIBezierPath {
     smoothness: CGFloat
   ) -> UIBezierPath {
     var smoothPoints = [SmoothPoint]()
-    for index in (0 ..< points.count) {
+    for index in 0 ..< points.count {
       let prevIndex = index - 1
       let prev = points[prevIndex >= 0 ? prevIndex : points.count + prevIndex]
       let curr = points[index]
@@ -44,7 +44,7 @@ extension UIBezierPath {
 
     let resultPath = UIBezierPath()
     resultPath.move(to: smoothPoints[0].point)
-    for index in (0 ..< smoothPoints.count) {
+    for index in 0 ..< smoothPoints.count {
       let curr = smoothPoints[index]
       let next = smoothPoints[(index + 1) % points.count]
       let currSmoothOut = curr.smoothOut()
@@ -55,7 +55,7 @@ extension UIBezierPath {
     return resultPath
   }
 
-  static private func distance(from fromPoint: CGPoint, to toPoint: CGPoint) -> CGFloat {
+  private static func distance(from fromPoint: CGPoint, to toPoint: CGPoint) -> CGFloat {
     return sqrt((fromPoint.x - toPoint.x) * (fromPoint.x - toPoint.x) + (fromPoint.y - toPoint.y) * (fromPoint.y - toPoint.y))
   }
 }

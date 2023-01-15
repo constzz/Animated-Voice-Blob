@@ -46,10 +46,10 @@ public final class ConstantDisplayLinkAnimator {
   public var isPaused: Bool = true {
     didSet {
       if self.isPaused != oldValue {
-        if !self.isPaused && self.displayLink == nil {
-          let displayLink = CADisplayLink(target: DisplayLinkTarget({ [weak self] in
+        if !self.isPaused, self.displayLink == nil {
+          let displayLink = CADisplayLink(target: DisplayLinkTarget { [weak self] in
             self?.tick()
-          }), selector: #selector(DisplayLinkTarget.event))
+          }, selector: #selector(DisplayLinkTarget.event))
           displayLink.add(to: RunLoop.main, forMode: .common)
           self.displayLink = displayLink
           self.updateDisplayLink()
@@ -85,4 +85,3 @@ public final class ConstantDisplayLinkAnimator {
     self.update()
   }
 }
-

@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 final class ColorPickerViewController: UIViewController {
-
   public typealias Selection = (UIColor) -> Swift.Void
 
   private var selection: Selection?
@@ -51,7 +50,7 @@ final class ColorPickerViewController: UIViewController {
     brightness = components.brightness
     alpha = components.alpha
 
-    let mainColor: UIColor = UIColor(
+    let mainColor = UIColor(
       hue: hue,
       saturation: 1.0,
       brightness: 1.0,
@@ -87,18 +86,19 @@ final class ColorPickerViewController: UIViewController {
 }
 
 // MARK: - Sliders factories
+
 private extension ColorPickerViewController {
   func makeHueSlider() -> GradientSlider {
     let slider = GradientSlider(frame: .zero)
     slider.hasRainbow = true
 
-    slider.valueChangedAction = { [weak self] slider, newValue in
+    slider.valueChangedAction = { [weak self] _, newValue in
       guard let self = self else { return }
       CATransaction.begin()
       CATransaction.setValue(true, forKey: kCATransactionDisableActions)
 
       self.hue = newValue
-      let mainColor: UIColor = UIColor(
+      let mainColor = UIColor(
         hue: newValue,
         saturation: 1.0,
         brightness: 1.0,
@@ -119,7 +119,7 @@ private extension ColorPickerViewController {
 
     slider.minColor = .black
 
-    slider.valueChangedAction = { [weak self] slider, newValue in
+    slider.valueChangedAction = { [weak self] _, newValue in
       guard let self = self else { return }
       CATransaction.begin()
       CATransaction.setValue(true, forKey: kCATransactionDisableActions)
@@ -135,7 +135,7 @@ private extension ColorPickerViewController {
   func makeSaturationSlider() -> GradientSlider {
     let slider = GradientSlider(frame: .zero)
     slider.minColor = .white
-    slider.valueChangedAction = { [weak self] slider, newValue in
+    slider.valueChangedAction = { [weak self] _, newValue in
       guard let self = self else { return }
       CATransaction.begin()
       CATransaction.setValue(true, forKey: kCATransactionDisableActions)
@@ -149,4 +149,3 @@ private extension ColorPickerViewController {
     return slider
   }
 }
-

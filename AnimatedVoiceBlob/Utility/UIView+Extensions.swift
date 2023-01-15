@@ -10,7 +10,7 @@ import UIKit
 extension UIView {
   func pinToSuperView(top: CGFloat? = 0, left: CGFloat? = 0, bottom: CGFloat? = 0, right: CGFloat? = 0) {
     guard let superview = self.superview else { return }
-    prepareForAutoLayout()
+    self.prepareForAutoLayout()
 
     if let top = top {
       self.topAnchor.constraint(equalTo: superview.topAnchor, constant: top).isActive = true
@@ -29,10 +29,10 @@ extension UIView {
     }
   }
 
-  func pinTo(view: UIView, top: CGFloat? = 0, left: CGFloat? = 0, bottom: CGFloat? = 0, right: CGFloat? = 0) {
+  func pinTo(view _: UIView, top: CGFloat? = 0, left: CGFloat? = 0, bottom: CGFloat? = 0, right: CGFloat? = 0) {
     guard let view = self.superview else { return }
 
-    prepareForAutoLayout()
+    self.prepareForAutoLayout()
 
     if let top = top {
       self.topAnchor.constraint(equalTo: view.topAnchor, constant: top).isActive = true
@@ -52,17 +52,17 @@ extension UIView {
   }
 
   func constraint(width: CGFloat) {
-    prepareForAutoLayout()
+    self.prepareForAutoLayout()
     self.widthAnchor.constraint(equalToConstant: width).isActive = true
   }
 
   func constraint(height: CGFloat) {
-    prepareForAutoLayout()
+    self.prepareForAutoLayout()
     self.heightAnchor.constraint(equalToConstant: height).isActive = true
   }
 
   func makeWidthEqualHeight() {
-    prepareForAutoLayout()
+    self.prepareForAutoLayout()
     self.widthAnchor.constraint(equalTo: self.heightAnchor).isActive = true
   }
 
@@ -80,6 +80,6 @@ extension UIView {
   }
 
   func add(view: UIView, constraints: [NSLayoutConstraint]) {
-    add(views: [view], constraints: constraints)
+    self.add(views: [view], constraints: constraints)
   }
 }

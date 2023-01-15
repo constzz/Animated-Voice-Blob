@@ -8,7 +8,6 @@
 import UIKit
 
 public class ViewControllerWithStackInScroll: UIViewController {
-
   private(set) lazy var stackView: UIStackView = {
     let stackView = UIStackView()
     stackView.axis = .vertical
@@ -23,11 +22,12 @@ public class ViewControllerWithStackInScroll: UIViewController {
     super.init(nibName: nil, bundle: nil)
   }
 
+  @available(*, unavailable)
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
-  public override func viewDidLoad() {
+  override public func viewDidLoad() {
     super.viewDidLoad()
     addSubviews()
     setupAutolayout()
@@ -35,7 +35,6 @@ public class ViewControllerWithStackInScroll: UIViewController {
 }
 
 private extension ViewControllerWithStackInScroll {
-
   func addSubviews() {
     view.addSubview(scrollView)
     scrollView.addSubview(stackView)
@@ -55,4 +54,3 @@ private extension ViewControllerWithStackInScroll {
     ])
   }
 }
-
