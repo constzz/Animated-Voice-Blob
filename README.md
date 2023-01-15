@@ -21,6 +21,11 @@ The main sample class in the project is `ViewController`. It creates Animated Bl
 
 ### BlobNode class
 BlobNode is a building block of VoiceBlobView. It can be of different sizes and have different opacities of the primary color.
+<div align = "center">
+<img src="Assets/gifs/small-blob.gif" width="350" />
+<img src="Assets/gifs/medium-blob.gif" width="350" />
+<img src="Assets/gifs/big-blob.gif" width="350" />
+</div>
 
 Each BlobNode will have the following fields to be initialized with:
 
@@ -100,8 +105,9 @@ VoiceBlobView(
 	bigBlobRange: (0.55, 1.00))
 ```
 
-By changing `pointsCount` and `isCircle` property of child blobs we may have the following results:
-// TODO: add gifs
+By changing `pointsCount` and `isCircle` property of child blobs we have the following results:
+// todo:
+
 We can also add the recursive animate method to test what updateLevel changes for the blob. Create and call `animate()` method  it in viewDidLoad:
 
 ```swift
