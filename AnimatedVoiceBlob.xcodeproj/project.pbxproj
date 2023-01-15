@@ -10,9 +10,23 @@
 		BBDC9C832974048800E32F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9C822974048800E32F97 /* AppDelegate.swift */; };
 		BBDC9C852974048800E32F97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9C842974048800E32F97 /* SceneDelegate.swift */; };
 		BBDC9C872974048800E32F97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9C862974048800E32F97 /* ViewController.swift */; };
-		BBDC9C8A2974048800E32F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDC9C882974048800E32F97 /* Main.storyboard */; };
 		BBDC9C8C2974048900E32F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDC9C8B2974048900E32F97 /* Assets.xcassets */; };
 		BBDC9C8F2974048900E32F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDC9C8D2974048900E32F97 /* LaunchScreen.storyboard */; };
+		BBDC9CD3297405C900E32F97 /* UIAlertController+ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC0297405C900E32F97 /* UIAlertController+ColorPicker.swift */; };
+		BBDC9CD4297405C900E32F97 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC1297405C900E32F97 /* ColorPickerViewController.swift */; };
+		BBDC9CD5297405C900E32F97 /* CustomColorSetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC2297405C900E32F97 /* CustomColorSetterView.swift */; };
+		BBDC9CD6297405C900E32F97 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC4297405C900E32F97 /* UIAlertController+Extension.swift */; };
+		BBDC9CD7297405C900E32F97 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC5297405C900E32F97 /* UIColor+Extension.swift */; };
+		BBDC9CD8297405C900E32F97 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC6297405C900E32F97 /* UIView+Extensions.swift */; };
+		BBDC9CD9297405CA00E32F97 /* UIStackView+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC7297405C900E32F97 /* UIStackView+Spacing.swift */; };
+		BBDC9CDA297405CA00E32F97 /* ViewControllerWithStackInScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC8297405C900E32F97 /* ViewControllerWithStackInScroll.swift */; };
+		BBDC9CDB297405CA00E32F97 /* VoiceBlob.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCA297405C900E32F97 /* VoiceBlob.swift */; };
+		BBDC9CDC297405CA00E32F97 /* BlobNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCB297405C900E32F97 /* BlobNode.swift */; };
+		BBDC9CDD297405CA00E32F97 /* UIBezierPath+SmoothCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCD297405C900E32F97 /* UIBezierPath+SmoothCurve.swift */; };
+		BBDC9CDE297405CA00E32F97 /* CALayer+BasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCE297405C900E32F97 /* CALayer+BasicAnimation.swift */; };
+		BBDC9CDF297405CA00E32F97 /* ConstantDisplayLinkAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCF297405C900E32F97 /* ConstantDisplayLinkAnimator.swift */; };
+		BBDC9CE0297405CA00E32F97 /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CD1297405C900E32F97 /* GradientSlider.swift */; };
+		BBDC9CE1297405CA00E32F97 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CD2297405C900E32F97 /* Slider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +34,24 @@
 		BBDC9C822974048800E32F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBDC9C842974048800E32F97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BBDC9C862974048800E32F97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BBDC9C892974048800E32F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBDC9C8B2974048900E32F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBDC9C8E2974048900E32F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBDC9C902974048900E32F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBDC9CC0297405C900E32F97 /* UIAlertController+ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ColorPicker.swift"; sourceTree = "<group>"; };
+		BBDC9CC1297405C900E32F97 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		BBDC9CC2297405C900E32F97 /* CustomColorSetterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColorSetterView.swift; sourceTree = "<group>"; };
+		BBDC9CC4297405C900E32F97 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		BBDC9CC5297405C900E32F97 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		BBDC9CC6297405C900E32F97 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BBDC9CC7297405C900E32F97 /* UIStackView+Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Spacing.swift"; sourceTree = "<group>"; };
+		BBDC9CC8297405C900E32F97 /* ViewControllerWithStackInScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithStackInScroll.swift; sourceTree = "<group>"; };
+		BBDC9CCA297405C900E32F97 /* VoiceBlob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceBlob.swift; sourceTree = "<group>"; };
+		BBDC9CCB297405C900E32F97 /* BlobNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlobNode.swift; sourceTree = "<group>"; };
+		BBDC9CCD297405C900E32F97 /* UIBezierPath+SmoothCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+SmoothCurve.swift"; sourceTree = "<group>"; };
+		BBDC9CCE297405C900E32F97 /* CALayer+BasicAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+BasicAnimation.swift"; sourceTree = "<group>"; };
+		BBDC9CCF297405C900E32F97 /* ConstantDisplayLinkAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantDisplayLinkAnimator.swift; sourceTree = "<group>"; };
+		BBDC9CD1297405C900E32F97 /* GradientSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
+		BBDC9CD2297405C900E32F97 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +84,73 @@
 		BBDC9C812974048800E32F97 /* AnimatedVoiceBlob */ = {
 			isa = PBXGroup;
 			children = (
+				BBDC9CBF297405C900E32F97 /* ColorPicker */,
+				BBDC9CD0297405C900E32F97 /* Sliders */,
+				BBDC9CC3297405C900E32F97 /* Utility */,
+				BBDC9CC9297405C900E32F97 /* Voice Blob */,
 				BBDC9C822974048800E32F97 /* AppDelegate.swift */,
 				BBDC9C842974048800E32F97 /* SceneDelegate.swift */,
 				BBDC9C862974048800E32F97 /* ViewController.swift */,
-				BBDC9C882974048800E32F97 /* Main.storyboard */,
 				BBDC9C8B2974048900E32F97 /* Assets.xcassets */,
 				BBDC9C8D2974048900E32F97 /* LaunchScreen.storyboard */,
 				BBDC9C902974048900E32F97 /* Info.plist */,
 			);
 			path = AnimatedVoiceBlob;
+			sourceTree = "<group>";
+		};
+		BBDC9CBF297405C900E32F97 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC9CC0297405C900E32F97 /* UIAlertController+ColorPicker.swift */,
+				BBDC9CC1297405C900E32F97 /* ColorPickerViewController.swift */,
+				BBDC9CC2297405C900E32F97 /* CustomColorSetterView.swift */,
+			);
+			name = ColorPicker;
+			path = ../../VoiceBulbTutor/VoiceBulbTutor/ColorPicker;
+			sourceTree = "<group>";
+		};
+		BBDC9CC3297405C900E32F97 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC9CC4297405C900E32F97 /* UIAlertController+Extension.swift */,
+				BBDC9CC5297405C900E32F97 /* UIColor+Extension.swift */,
+				BBDC9CC6297405C900E32F97 /* UIView+Extensions.swift */,
+				BBDC9CC7297405C900E32F97 /* UIStackView+Spacing.swift */,
+				BBDC9CC8297405C900E32F97 /* ViewControllerWithStackInScroll.swift */,
+			);
+			name = Utility;
+			path = ../../VoiceBulbTutor/VoiceBulbTutor/Utility;
+			sourceTree = "<group>";
+		};
+		BBDC9CC9297405C900E32F97 /* Voice Blob */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC9CCA297405C900E32F97 /* VoiceBlob.swift */,
+				BBDC9CCB297405C900E32F97 /* BlobNode.swift */,
+				BBDC9CCC297405C900E32F97 /* Utility */,
+			);
+			name = "Voice Blob";
+			path = "../../VoiceBulbTutor/VoiceBulbTutor/Voice Blob";
+			sourceTree = "<group>";
+		};
+		BBDC9CCC297405C900E32F97 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC9CCD297405C900E32F97 /* UIBezierPath+SmoothCurve.swift */,
+				BBDC9CCE297405C900E32F97 /* CALayer+BasicAnimation.swift */,
+				BBDC9CCF297405C900E32F97 /* ConstantDisplayLinkAnimator.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		BBDC9CD0297405C900E32F97 /* Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC9CD1297405C900E32F97 /* GradientSlider.swift */,
+				BBDC9CD2297405C900E32F97 /* Slider.swift */,
+			);
+			name = Sliders;
+			path = ../../VoiceBulbTutor/VoiceBulbTutor/Sliders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +213,6 @@
 			files = (
 				BBDC9C8F2974048900E32F97 /* LaunchScreen.storyboard in Resources */,
 				BBDC9C8C2974048900E32F97 /* Assets.xcassets in Resources */,
-				BBDC9C8A2974048800E32F97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +223,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDC9CD4297405C900E32F97 /* ColorPickerViewController.swift in Sources */,
+				BBDC9CD6297405C900E32F97 /* UIAlertController+Extension.swift in Sources */,
+				BBDC9CD3297405C900E32F97 /* UIAlertController+ColorPicker.swift in Sources */,
+				BBDC9CDD297405CA00E32F97 /* UIBezierPath+SmoothCurve.swift in Sources */,
+				BBDC9CE1297405CA00E32F97 /* Slider.swift in Sources */,
+				BBDC9CDB297405CA00E32F97 /* VoiceBlob.swift in Sources */,
+				BBDC9CE0297405CA00E32F97 /* GradientSlider.swift in Sources */,
+				BBDC9CD8297405C900E32F97 /* UIView+Extensions.swift in Sources */,
+				BBDC9CDE297405CA00E32F97 /* CALayer+BasicAnimation.swift in Sources */,
+				BBDC9CDA297405CA00E32F97 /* ViewControllerWithStackInScroll.swift in Sources */,
+				BBDC9CDC297405CA00E32F97 /* BlobNode.swift in Sources */,
+				BBDC9CD5297405C900E32F97 /* CustomColorSetterView.swift in Sources */,
 				BBDC9C872974048800E32F97 /* ViewController.swift in Sources */,
 				BBDC9C832974048800E32F97 /* AppDelegate.swift in Sources */,
 				BBDC9C852974048800E32F97 /* SceneDelegate.swift in Sources */,
+				BBDC9CD7297405C900E32F97 /* UIColor+Extension.swift in Sources */,
+				BBDC9CD9297405CA00E32F97 /* UIStackView+Spacing.swift in Sources */,
+				BBDC9CDF297405CA00E32F97 /* ConstantDisplayLinkAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BBDC9C882974048800E32F97 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBDC9C892974048800E32F97 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BBDC9C8D2974048900E32F97 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +384,7 @@
 				INFOPLIST_FILE = AnimatedVoiceBlob/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +410,7 @@
 				INFOPLIST_FILE = AnimatedVoiceBlob/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
