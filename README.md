@@ -54,7 +54,7 @@ func startAnimating()
 func stopAnimating()
 ```
 
-### BlobNode class
+### VoiceBlobView class
 VoiceBlobView controls how the blobs will look together.  
 This class also has some place for configurations via init:
 ```swift
