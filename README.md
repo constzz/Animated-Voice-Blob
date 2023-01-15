@@ -8,7 +8,7 @@ The main and the only app's screen ```ViewController``` has sample usage of Tele
 <img src="Assets/gifs/sample-controller.gif" width="350" />
 </div>
 
-### BlobNode class
+# BlobNode class
 BlobNode is a building block of VoiceBlobView. It can be of different sizes and have different opacities of the primary color.
 <div align = "center">
 <img src="Assets/gifs/small-blob.gif" width="250" />
@@ -48,7 +48,7 @@ func startAnimating()
 func stopAnimating()
 ```
 
-### VoiceBlobView class
+# VoiceBlobView class
 VoiceBlobView controls how the blobs will look together.  
 This class also has some place for configurations via init:
 ```swift
@@ -82,7 +82,7 @@ displayLinkAnimator = ConstantDisplayLinkAnimator() { [weak self] in
 // Init scope ...
 ```
 
-## Adding views in ViewController
+# Adding views in ViewController
 The default VoiceBlobView configuration, used in the project is the following:
 
 ```swift
