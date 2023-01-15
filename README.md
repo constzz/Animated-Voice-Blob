@@ -2,10 +2,12 @@
 Animated Voice Blob made like in Telegram mobile app.
 
 # About this project
-The project folders for each of the custom components used:
+The project has folders for each of the custom components used:
 - Voice Blob
 - Color Picker
-- Slider
+- Gradient Slider
+And common utilities:
+- Utility
  
 And the main and the only app's screen ```ViewController``` has sample usage of Telegram-like voice blobs in different styles and with a color picker.
 
