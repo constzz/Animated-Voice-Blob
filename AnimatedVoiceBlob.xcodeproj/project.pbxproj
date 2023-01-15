@@ -25,8 +25,7 @@
 		BBDC9CDD297405CA00E32F97 /* UIBezierPath+SmoothCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCD297405C900E32F97 /* UIBezierPath+SmoothCurve.swift */; };
 		BBDC9CDE297405CA00E32F97 /* CALayer+BasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCE297405C900E32F97 /* CALayer+BasicAnimation.swift */; };
 		BBDC9CDF297405CA00E32F97 /* ConstantDisplayLinkAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCF297405C900E32F97 /* ConstantDisplayLinkAnimator.swift */; };
-		BBDC9CE0297405CA00E32F97 /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CD1297405C900E32F97 /* GradientSlider.swift */; };
-		BBDC9CE1297405CA00E32F97 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CD2297405C900E32F97 /* Slider.swift */; };
+		BBDC9CE329740F5D00E32F97 /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CE229740F5D00E32F97 /* GradientSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +49,7 @@
 		BBDC9CCD297405C900E32F97 /* UIBezierPath+SmoothCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+SmoothCurve.swift"; sourceTree = "<group>"; };
 		BBDC9CCE297405C900E32F97 /* CALayer+BasicAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+BasicAnimation.swift"; sourceTree = "<group>"; };
 		BBDC9CCF297405C900E32F97 /* ConstantDisplayLinkAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantDisplayLinkAnimator.swift; sourceTree = "<group>"; };
-		BBDC9CD1297405C900E32F97 /* GradientSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
-		BBDC9CD2297405C900E32F97 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		BBDC9CE229740F5D00E32F97 /* GradientSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GradientSlider.swift; path = AnimatedVoiceBlob/GradientSlider/GradientSlider.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +82,8 @@
 		BBDC9C812974048800E32F97 /* AnimatedVoiceBlob */ = {
 			isa = PBXGroup;
 			children = (
+				BBDC9CE429740F7200E32F97 /* GradientSlider */,
 				BBDC9CBF297405C900E32F97 /* ColorPicker */,
-				BBDC9CD0297405C900E32F97 /* Sliders */,
 				BBDC9CC3297405C900E32F97 /* Utility */,
 				BBDC9CC9297405C900E32F97 /* Voice Blob */,
 				BBDC9C822974048800E32F97 /* AppDelegate.swift */,
@@ -143,14 +141,12 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		BBDC9CD0297405C900E32F97 /* Sliders */ = {
+		BBDC9CE429740F7200E32F97 /* GradientSlider */ = {
 			isa = PBXGroup;
 			children = (
-				BBDC9CD1297405C900E32F97 /* GradientSlider.swift */,
-				BBDC9CD2297405C900E32F97 /* Slider.swift */,
+				BBDC9CE229740F5D00E32F97 /* GradientSlider.swift */,
 			);
-			name = Sliders;
-			path = ../../VoiceBulbTutor/VoiceBulbTutor/Sliders;
+			path = GradientSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,10 +223,9 @@
 				BBDC9CD6297405C900E32F97 /* UIAlertController+Extension.swift in Sources */,
 				BBDC9CD3297405C900E32F97 /* UIAlertController+ColorPicker.swift in Sources */,
 				BBDC9CDD297405CA00E32F97 /* UIBezierPath+SmoothCurve.swift in Sources */,
-				BBDC9CE1297405CA00E32F97 /* Slider.swift in Sources */,
 				BBDC9CDB297405CA00E32F97 /* VoiceBlob.swift in Sources */,
-				BBDC9CE0297405CA00E32F97 /* GradientSlider.swift in Sources */,
 				BBDC9CD8297405C900E32F97 /* UIView+Extensions.swift in Sources */,
+				BBDC9CE329740F5D00E32F97 /* GradientSlider.swift in Sources */,
 				BBDC9CDE297405CA00E32F97 /* CALayer+BasicAnimation.swift in Sources */,
 				BBDC9CDA297405CA00E32F97 /* ViewControllerWithStackInScroll.swift in Sources */,
 				BBDC9CDC297405CA00E32F97 /* BlobNode.swift in Sources */,
