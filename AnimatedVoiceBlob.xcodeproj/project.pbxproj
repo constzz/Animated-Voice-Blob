@@ -12,11 +12,6 @@
 		BBDC9C872974048800E32F97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9C862974048800E32F97 /* ViewController.swift */; };
 		BBDC9C8C2974048900E32F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDC9C8B2974048900E32F97 /* Assets.xcassets */; };
 		BBDC9C8F2974048900E32F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDC9C8D2974048900E32F97 /* LaunchScreen.storyboard */; };
-		BBDC9CD6297405C900E32F97 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC4297405C900E32F97 /* UIAlertController+Extension.swift */; };
-		BBDC9CD7297405C900E32F97 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC5297405C900E32F97 /* UIColor+Extension.swift */; };
-		BBDC9CD8297405C900E32F97 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC6297405C900E32F97 /* UIView+Extensions.swift */; };
-		BBDC9CD9297405CA00E32F97 /* UIStackView+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC7297405C900E32F97 /* UIStackView+Spacing.swift */; };
-		BBDC9CDA297405CA00E32F97 /* ViewControllerWithStackInScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CC8297405C900E32F97 /* ViewControllerWithStackInScroll.swift */; };
 		BBDC9CDB297405CA00E32F97 /* VoiceBlob.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCA297405C900E32F97 /* VoiceBlob.swift */; };
 		BBDC9CDC297405CA00E32F97 /* BlobNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCB297405C900E32F97 /* BlobNode.swift */; };
 		BBDC9CDD297405CA00E32F97 /* UIBezierPath+SmoothCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CCD297405C900E32F97 /* UIBezierPath+SmoothCurve.swift */; };
@@ -26,6 +21,11 @@
 		BBDC9CF62974116000E32F97 /* UIAlertController+ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CF32974116000E32F97 /* UIAlertController+ColorPicker.swift */; };
 		BBDC9CF72974116000E32F97 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CF42974116000E32F97 /* ColorPickerViewController.swift */; };
 		BBDC9CF82974116000E32F97 /* CustomColorSetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CF52974116000E32F97 /* CustomColorSetterView.swift */; };
+		BBDC9D00297411FC00E32F97 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CFB297411FC00E32F97 /* UIAlertController+Extension.swift */; };
+		BBDC9D01297411FC00E32F97 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CFC297411FC00E32F97 /* UIColor+Extension.swift */; };
+		BBDC9D02297411FC00E32F97 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CFD297411FC00E32F97 /* UIView+Extensions.swift */; };
+		BBDC9D03297411FC00E32F97 /* UIStackView+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CFE297411FC00E32F97 /* UIStackView+Spacing.swift */; };
+		BBDC9D04297411FC00E32F97 /* ViewControllerWithStackInScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CFF297411FC00E32F97 /* ViewControllerWithStackInScroll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,11 +36,6 @@
 		BBDC9C8B2974048900E32F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBDC9C8E2974048900E32F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBDC9C902974048900E32F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBDC9CC4297405C900E32F97 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
-		BBDC9CC5297405C900E32F97 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		BBDC9CC6297405C900E32F97 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		BBDC9CC7297405C900E32F97 /* UIStackView+Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Spacing.swift"; sourceTree = "<group>"; };
-		BBDC9CC8297405C900E32F97 /* ViewControllerWithStackInScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithStackInScroll.swift; sourceTree = "<group>"; };
 		BBDC9CCA297405C900E32F97 /* VoiceBlob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceBlob.swift; sourceTree = "<group>"; };
 		BBDC9CCB297405C900E32F97 /* BlobNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlobNode.swift; sourceTree = "<group>"; };
 		BBDC9CCD297405C900E32F97 /* UIBezierPath+SmoothCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+SmoothCurve.swift"; sourceTree = "<group>"; };
@@ -50,6 +45,11 @@
 		BBDC9CF32974116000E32F97 /* UIAlertController+ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ColorPicker.swift"; sourceTree = "<group>"; };
 		BBDC9CF42974116000E32F97 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		BBDC9CF52974116000E32F97 /* CustomColorSetterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColorSetterView.swift; sourceTree = "<group>"; };
+		BBDC9CFB297411FC00E32F97 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		BBDC9CFC297411FC00E32F97 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		BBDC9CFD297411FC00E32F97 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BBDC9CFE297411FC00E32F97 /* UIStackView+Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Spacing.swift"; sourceTree = "<group>"; };
+		BBDC9CFF297411FC00E32F97 /* ViewControllerWithStackInScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithStackInScroll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +82,9 @@
 		BBDC9C812974048800E32F97 /* AnimatedVoiceBlob */ = {
 			isa = PBXGroup;
 			children = (
+				BBDC9CFA297411FC00E32F97 /* Utility */,
 				BBDC9CF22974116000E32F97 /* ColorPicker */,
 				BBDC9CE429740F7200E32F97 /* GradientSlider */,
-				BBDC9CC3297405C900E32F97 /* Utility */,
 				BBDC9CC9297405C900E32F97 /* Voice Blob */,
 				BBDC9C822974048800E32F97 /* AppDelegate.swift */,
 				BBDC9C842974048800E32F97 /* SceneDelegate.swift */,
@@ -94,19 +94,6 @@
 				BBDC9C902974048900E32F97 /* Info.plist */,
 			);
 			path = AnimatedVoiceBlob;
-			sourceTree = "<group>";
-		};
-		BBDC9CC3297405C900E32F97 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				BBDC9CC4297405C900E32F97 /* UIAlertController+Extension.swift */,
-				BBDC9CC5297405C900E32F97 /* UIColor+Extension.swift */,
-				BBDC9CC6297405C900E32F97 /* UIView+Extensions.swift */,
-				BBDC9CC7297405C900E32F97 /* UIStackView+Spacing.swift */,
-				BBDC9CC8297405C900E32F97 /* ViewControllerWithStackInScroll.swift */,
-			);
-			name = Utility;
-			path = ../../VoiceBulbTutor/VoiceBulbTutor/Utility;
 			sourceTree = "<group>";
 		};
 		BBDC9CC9297405C900E32F97 /* Voice Blob */ = {
@@ -146,6 +133,18 @@
 				BBDC9CF52974116000E32F97 /* CustomColorSetterView.swift */,
 			);
 			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		BBDC9CFA297411FC00E32F97 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC9CFB297411FC00E32F97 /* UIAlertController+Extension.swift */,
+				BBDC9CFC297411FC00E32F97 /* UIColor+Extension.swift */,
+				BBDC9CFD297411FC00E32F97 /* UIView+Extensions.swift */,
+				BBDC9CFE297411FC00E32F97 /* UIStackView+Spacing.swift */,
+				BBDC9CFF297411FC00E32F97 /* ViewControllerWithStackInScroll.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,22 +217,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBDC9CD6297405C900E32F97 /* UIAlertController+Extension.swift in Sources */,
 				BBDC9CDD297405CA00E32F97 /* UIBezierPath+SmoothCurve.swift in Sources */,
 				BBDC9CDB297405CA00E32F97 /* VoiceBlob.swift in Sources */,
-				BBDC9CD8297405C900E32F97 /* UIView+Extensions.swift in Sources */,
 				BBDC9CE329740F5D00E32F97 /* GradientSlider.swift in Sources */,
+				BBDC9D03297411FC00E32F97 /* UIStackView+Spacing.swift in Sources */,
 				BBDC9CF82974116000E32F97 /* CustomColorSetterView.swift in Sources */,
+				BBDC9D04297411FC00E32F97 /* ViewControllerWithStackInScroll.swift in Sources */,
 				BBDC9CDE297405CA00E32F97 /* CALayer+BasicAnimation.swift in Sources */,
-				BBDC9CDA297405CA00E32F97 /* ViewControllerWithStackInScroll.swift in Sources */,
 				BBDC9CDC297405CA00E32F97 /* BlobNode.swift in Sources */,
 				BBDC9C872974048800E32F97 /* ViewController.swift in Sources */,
+				BBDC9D01297411FC00E32F97 /* UIColor+Extension.swift in Sources */,
 				BBDC9CF62974116000E32F97 /* UIAlertController+ColorPicker.swift in Sources */,
+				BBDC9D00297411FC00E32F97 /* UIAlertController+Extension.swift in Sources */,
 				BBDC9C832974048800E32F97 /* AppDelegate.swift in Sources */,
 				BBDC9CF72974116000E32F97 /* ColorPickerViewController.swift in Sources */,
+				BBDC9D02297411FC00E32F97 /* UIView+Extensions.swift in Sources */,
 				BBDC9C852974048800E32F97 /* SceneDelegate.swift in Sources */,
-				BBDC9CD7297405C900E32F97 /* UIColor+Extension.swift in Sources */,
-				BBDC9CD9297405CA00E32F97 /* UIStackView+Spacing.swift in Sources */,
 				BBDC9CDF297405CA00E32F97 /* ConstantDisplayLinkAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
