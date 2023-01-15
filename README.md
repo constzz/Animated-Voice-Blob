@@ -7,7 +7,7 @@ The project has folders for each of the custom components used:
 - Color Picker
 - Gradient Slider
 
-And common utilities:
+Common utilities are placed in:
 - Utility
  
 And the main and the only app's screen ```ViewController``` has sample usage of Telegram-like voice blobs in different styles and with a color picker.
