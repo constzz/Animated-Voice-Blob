@@ -24,7 +24,7 @@ extension UIAlertController {
     setTitle(currentColor.hexString, font: Constants.titleFont, color: currentColor)
 
     controller.setup(color: currentColor) { [weak self] newColor in
-      self?.setTitle(currentColor.hexString, font: Constants.titleFont, color: newColor)
+      self?.setTitle(newColor.hexString, font: Constants.titleFont, color: newColor)
       selection(controller.color)
     }
 
