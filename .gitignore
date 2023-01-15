@@ -1,0 +1,25 @@
+xcschememanagement.plist
+UserInterfaceState.xcuserstate
+Breakpoints_v2.xcbkptlist
+*xcworkspace/xcuserdata/*
+
+## Build generated
+build/
+DerivedData
+
+xcuserdata
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.xcuserstate
+*.dSYM.zip
+*.dSYM
+.DS_Store
+.idea/
+
