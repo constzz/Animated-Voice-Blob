@@ -125,4 +125,7 @@ Instead of random values and time, this can be synced with the audio level. For 
 # Color picker 
 The project also has a custom color picker, which changes the color of our blobs and the tint of the screen elements.
 
-![](https://cdn-images-1.medium.com/max/1200/1*8y3G5MS9VKEH_DoptO0vsA.png)
+<div align = "center">
+<img src="Assets/gifs/color-picker.gif" width="350" />
+</div>
+
