@@ -12,6 +12,13 @@ Common utilities are placed in:
  
 And the main and the only app's screen ```ViewController``` has sample usage of Telegram-like voice blobs in different styles and with a color picker.
 
+## Sample View controller
+The main sample class in the project is `ViewController`. It creates Animated Blobs of different styles, simulates voice level changes, and has the color selection and starts/stop animation possibilities.
+
+<div align = "center">
+<img src="Assets/gifs/sample-controller.gif" width="350" />
+</div>
+
 ### BlobNode class
 BlobNode is a building block of VoiceBlobView. It can be of different sizes and have different opacities of the primary color.
 
@@ -121,9 +128,3 @@ Instead of random values and time, this can be synced with the audio level. For 
 The project also has a custom color picker, which changes the color of our blobs and the tint of the screen elements.
 
 ![](https://cdn-images-1.medium.com/max/1200/1*8y3G5MS9VKEH_DoptO0vsA.png)
-## Sample View controller
-The main sample class in the project is `ViewController`. It creates Animated Blobs of different styles, simulates voice level changes, and has the color selection and starts/stop animation possibilities.
-
-<div align = "center">
-<img src="Assets/gifs/sample-controller.gif" width="350" />
-</div>
