@@ -27,19 +27,16 @@ final class ViewController: ViewControllerWithStackInScroll {
 
   private lazy var colorPickerBlob: VoiceBlobView = makeDefaultVoiceBlob()
 
-  private lazy var voiceBlob1: VoiceBlobView = {
-    let blob = makeDefaultVoiceBlob()
-    return blob
-  }()
+  private lazy var voiceBlobDefault: VoiceBlobView = makeDefaultVoiceBlob()
 
-  private lazy var voiceBlob2: VoiceBlobView = {
+  private lazy var voiceBlobCircleOnly: VoiceBlobView = {
     let blob = makeDefaultVoiceBlob()
     blob.mediumBlob.isCircle = true
     blob.bigBlob.isCircle = true
     return blob
   }()
 
-  private lazy var voiceBlob3: VoiceBlobView = {
+  private lazy var voiceBlobDetailedCorners: VoiceBlobView = {
     let blob = makeDefaultVoiceBlob()
     let pointsCount = 200
     blob.mediumBlob.pointsCount = pointsCount
@@ -50,7 +47,7 @@ final class ViewController: ViewControllerWithStackInScroll {
   }()
 
   private var voiceBlobs: [VoiceBlobView] {
-    return [voiceBlob1, voiceBlob2, voiceBlob3]
+    return [voiceBlobDefault, voiceBlobCircleOnly, voiceBlobDetailedCorners]
   }
 
   override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -92,54 +89,54 @@ private extension ViewController {
   private func animate() {
     DispatchQueue.main.asyncAfter(deadline: .now().advanced(by: .seconds(1))) { [weak self] in
       let randomValue = CGFloat.random(in: 1...50)
-      self?.voiceBlob1.updateLevel(randomValue)
-      self?.voiceBlob2.updateLevel(randomValue)
-      self?.voiceBlob3.updateLevel(randomValue)
+      self?.voiceBlobDefault.updateLevel(randomValue)
+      self?.voiceBlobCircleOnly.updateLevel(randomValue)
+      self?.voiceBlobDetailedCorners.updateLevel(randomValue)
       self?.animate()
     }
   }
 
   private func startBlobsAnimations() {
-    self.voiceBlob1.startAnimating()
-    self.voiceBlob2.startAnimating()
-    self.voiceBlob3.startAnimating()
+    self.voiceBlobDefault.startAnimating()
+    self.voiceBlobCircleOnly.startAnimating()
+    self.voiceBlobDetailedCorners.startAnimating()
   }
 
   private func stopBlobsAnimations(duration: CGFloat = 1.0) {
-    self.voiceBlob1.stopAnimating(duration: duration)
-    self.voiceBlob2.stopAnimating(duration: duration)
-    self.voiceBlob3.stopAnimating(duration: duration)
+    self.voiceBlobDefault.stopAnimating(duration: duration)
+    self.voiceBlobCircleOnly.stopAnimating(duration: duration)
+    self.voiceBlobDetailedCorners.stopAnimating(duration: duration)
   }
 }
 
 // MARK: - Layouting subviews
 private extension ViewController {
   func addVoiceBlob() {
-    view.addSubview(voiceBlob1)
-    voiceBlob1.prepareForAutoLayout()
+    view.addSubview(voiceBlobDefault)
+    voiceBlobDefault.prepareForAutoLayout()
     NSLayoutConstraint.activate([
-      voiceBlob1.heightAnchor.constraint(equalToConstant: PrefferedValues.bulbHeight),
-      voiceBlob1.widthAnchor.constraint(equalToConstant: PrefferedValues.bulbWidth),
-      voiceBlob1.topAnchor.constraint(equalTo: view.topAnchor, constant: 44),
-      voiceBlob1.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+      voiceBlobDefault.heightAnchor.constraint(equalToConstant: PrefferedValues.bulbHeight),
+      voiceBlobDefault.widthAnchor.constraint(equalToConstant: PrefferedValues.bulbWidth),
+      voiceBlobDefault.topAnchor.constraint(equalTo: view.topAnchor, constant: 44),
+      voiceBlobDefault.leadingAnchor.constraint(equalTo: view.leadingAnchor)
     ])
 
-    view.addSubview(voiceBlob2)
-    voiceBlob2.prepareForAutoLayout()
+    view.addSubview(voiceBlobCircleOnly)
+    voiceBlobCircleOnly.prepareForAutoLayout()
     NSLayoutConstraint.activate([
-      voiceBlob2.heightAnchor.constraint(equalToConstant: PrefferedValues.bulbHeight),
-      voiceBlob2.widthAnchor.constraint(equalToConstant: PrefferedValues.bulbWidth),
-      voiceBlob2.topAnchor.constraint(equalTo: view.topAnchor, constant: 44),
-      voiceBlob2.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+      voiceBlobCircleOnly.heightAnchor.constraint(equalToConstant: PrefferedValues.bulbHeight),
+      voiceBlobCircleOnly.widthAnchor.constraint(equalToConstant: PrefferedValues.bulbWidth),
+      voiceBlobCircleOnly.topAnchor.constraint(equalTo: view.topAnchor, constant: 44),
+      voiceBlobCircleOnly.trailingAnchor.constraint(equalTo: view.trailingAnchor)
     ])
 
-    view.addSubview(voiceBlob3)
-    voiceBlob3.prepareForAutoLayout()
+    view.addSubview(voiceBlobDetailedCorners)
+    voiceBlobDetailedCorners.prepareForAutoLayout()
     NSLayoutConstraint.activate([
-      voiceBlob3.heightAnchor.constraint(equalToConstant: PrefferedValues.bulbHeight),
-      voiceBlob3.widthAnchor.constraint(equalToConstant: PrefferedValues.bulbWidth),
-      voiceBlob3.topAnchor.constraint(equalTo: voiceBlob1.bottomAnchor, constant: 44),
-      voiceBlob3.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+      voiceBlobDetailedCorners.heightAnchor.constraint(equalToConstant: PrefferedValues.bulbHeight),
+      voiceBlobDetailedCorners.widthAnchor.constraint(equalToConstant: PrefferedValues.bulbWidth),
+      voiceBlobDetailedCorners.topAnchor.constraint(equalTo: voiceBlobDefault.bottomAnchor, constant: 44),
+      voiceBlobDetailedCorners.centerXAnchor.constraint(equalTo: view.centerXAnchor)
     ])
   }
 
