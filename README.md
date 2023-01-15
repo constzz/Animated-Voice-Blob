@@ -10,18 +10,18 @@ BlobNode is a building block of VoiceBlobView. It can be of different sizes and 
 Each BlobNode will have the following fields to be initialized with:
 
 ```swift
-    class BlobNode: UIView {  
-      init(  
-        pointsCount: Int,  
-        minRandomness: CGFloat,  
-        maxRandomness: CGFloat,  
-        minSpeed: CGFloat,  
-        maxSpeed: CGFloat,  
-        minScale: CGFloat,  
-        maxScale: CGFloat,  
-        scaleSpeed: CGFloat,  
-        isCircle: Bool  
-    ) ...  
+class BlobNode: UIView {  
+    init(  
+      pointsCount: Int,  
+      minRandomness: CGFloat,  
+      maxRandomness: CGFloat,  
+      minSpeed: CGFloat,  
+      maxSpeed: CGFloat,  
+      minScale: CGFloat,  
+      maxScale: CGFloat,  
+      scaleSpeed: CGFloat,  
+      isCircle: Bool  
+  ) ...  
 }
 ``` 
     
@@ -60,7 +60,7 @@ class VoiceBlobView: UIView {
 After init, it already has configured and placed child blobs. Also, it set ups the animation loop, to keep the blobs animating.
 
 ```swift
-  // ... Init scope
+// Init scope ...
 displayLinkAnimator = ConstantDisplayLinkAnimator() { [weak self] in  
       guard let self = self else { return }  
   
@@ -69,8 +69,8 @@ displayLinkAnimator = ConstantDisplayLinkAnimator() { [weak self] in
       self.smallBlob.level = self.presentationAudioLevel  
       self.mediumBlob.level = self.presentationAudioLevel  
       self.bigBlob.level = self.presentationAudioLevel  
-    }
-  // Init scope ...
+}
+// Init scope ...
 ```
 
 ## Adding views in ViewController
