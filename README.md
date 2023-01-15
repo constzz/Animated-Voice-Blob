@@ -21,9 +21,9 @@ Each BlobNode will have the following fields to be initialized with:
         maxScale: CGFloat,  
         scaleSpeed: CGFloat,  
         isCircle: Bool  
-      ) ...  
-    }
-   ``` 
+    ) ...  
+}
+``` 
     
 It has some fields that could be changed dynamically via parameters and methods:
 ```swift
