@@ -9,7 +9,7 @@ The main and the only app's screen ```ViewController``` has sample usage of Tele
 </div>
 
 # BlobNode class
-BlobNode is a building block of VoiceBlobView. It can be of different sizes and have different opacities of the primary color.
+BlobNode is a building block of VoiceBlobView. It can be made of different sizes and have different opacities of the primary color.
 <div align = "center">
 <img src="Assets/gifs/small-blob.gif" width="250" />
 <img src="Assets/gifs/medium-blob.gif" width="250" />
@@ -66,7 +66,8 @@ class VoiceBlobView: UIView {
 }
 ```
 
-After init, it already has configured and placed child blobs. Also, it set ups the animation loop, to keep the blobs animating.
+After init, it is already configured and has added child blobs. 
+Also, it sets up the animation loop, to keep the blobs animating:
 
 ```swift
 // Init scope ...
@@ -100,7 +101,7 @@ By changing `pointsCount` and `isCircle` property of child blobs we have the fol
 <img src="Assets/gifs/detailed-corners-blob.gif" width="350" />
 </div>
 
-We can also add the recursive animate method to test what updateLevel changes for the blob. Create and call `animate()` method  it in viewDidLoad:
+We can also create the recursive `animate` method to test what updateLevel changes for the blob. And call `animate()` method  it in viewDidLoad:
 
 ```swift
 override func viewDidLoad {
@@ -120,7 +121,8 @@ private func animate() {
 }
 ```
 
-Instead of random values and time, this can be synced with the audio level. For example, for the user’s audio messages (like Telegram did) or playing video/audio content. 
+Instead of random values and time, this can be synced with the audio level.
+For example, for the user’s audio messages (like Telegram did) or playing video/audio content. 
 
 # Color picker 
 The project also has a custom color picker, which changes the color of our blobs and the tint of the screen elements.
