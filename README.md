@@ -1,7 +1,7 @@
 # Animated-Voice-Blob
 Animated Voice Blob made like in Telegram mobile app.
 
-## Sample View controller
+# Sample View controller
 The main and the only app's screen ```ViewController``` has sample usage of Telegram-like voice blobs in different styles and with a color picker. It creates Animated Blobs of different styles, simulates voice level changes, and has the color selection and starts/stop animation possibilities.
 
 <div align = "center">
