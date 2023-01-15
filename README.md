@@ -1,19 +1,8 @@
 # Animated-Voice-Blob
 Animated Voice Blob made like in Telegram mobile app.
 
-# About this project
-The project has folders for each of the custom components used:
-- Voice Blob
-- Color Picker
-- Gradient Slider
-
-Common utilities are placed in:
-- Utility
- 
-And the main and the only app's screen ```ViewController``` has sample usage of Telegram-like voice blobs in different styles and with a color picker.
-
 ## Sample View controller
-The main sample class in the project is `ViewController`. It creates Animated Blobs of different styles, simulates voice level changes, and has the color selection and starts/stop animation possibilities.
+The main and the only app's screen ```ViewController``` has sample usage of Telegram-like voice blobs in different styles and with a color picker. It creates Animated Blobs of different styles, simulates voice level changes, and has the color selection and starts/stop animation possibilities.
 
 <div align = "center">
 <img src="Assets/gifs/sample-controller.gif" width="350" />
@@ -106,7 +95,10 @@ VoiceBlobView(
 ```
 
 By changing `pointsCount` and `isCircle` property of child blobs we have the following results:
-// todo:
+<div align = "center">
+<img src="Assets/gifs/circle-only-blob.gif" width="350" />
+<img src="Assets/gifs/detailed-corners-blob.gif" width="350" />
+</div>
 
 We can also add the recursive animate method to test what updateLevel changes for the blob. Create and call `animate()` method  it in viewDidLoad:
 
