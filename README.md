@@ -22,9 +22,9 @@ The main sample class in the project is `ViewController`. It creates Animated Bl
 ### BlobNode class
 BlobNode is a building block of VoiceBlobView. It can be of different sizes and have different opacities of the primary color.
 <div align = "center">
-<img src="Assets/gifs/small-blob.gif" width="350" />
-<img src="Assets/gifs/medium-blob.gif" width="350" />
-<img src="Assets/gifs/big-blob.gif" width="350" />
+<img src="Assets/gifs/small-blob.gif" width="250" />
+<img src="Assets/gifs/medium-blob.gif" width="250" />
+<img src="Assets/gifs/big-blob.gif" width="250" />
 </div>
 
 Each BlobNode will have the following fields to be initialized with:
