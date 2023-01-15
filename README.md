@@ -2,10 +2,15 @@
 Animated Voice Blob made like in Telegram mobile app.
 
 # About this project
-Screen with sample usage of Telegram-like voice blobs in different styles and with a colour picker.
+The project folders for each of the custom components used:
+- Voice Blob
+- Color Picker
+- Slider
+ 
+And the main and the only app's screen ```ViewController``` has sample usage of Telegram-like voice blobs in different styles and with a color picker.
 
 ### BlobNode class
-BlobNode is a building block of VoiceBlobView. It can be of different sizes and have different opacities of the primary colour.
+BlobNode is a building block of VoiceBlobView. It can be of different sizes and have different opacities of the primary color.
 
 Each BlobNode will have the following fields to be initialized with:
 
@@ -108,8 +113,8 @@ override func viewDidLoad {
 
 Instead of random values and time, this can be synced with the audio level. For example, for the user’s audio messages (like Telegram did) or playing video/audio content. 
 
-# Colour picker 
-The project also has a custom colour picker, which changes the colour of our blobs and the tint of the screen elements.
+# Color picker 
+The project also has a custom color picker, which changes the color of our blobs and the tint of the screen elements.
 
 ![](https://cdn-images-1.medium.com/max/1200/1*8y3G5MS9VKEH_DoptO0vsA.png)
 ## Sample View controller
