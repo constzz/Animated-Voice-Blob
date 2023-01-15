@@ -124,3 +124,6 @@ The project also has a custom color picker, which changes the color of our blobs
 ## Sample View controller
 The main sample class in the project is `ViewController`. It creates Animated Blobs of different styles, simulates voice level changes, and has the color selection and starts/stop animation possibilities.
 
+<div align = "center">
+<img src="Assets/gifs/sample-controller.gif" width="350" />
+</div>
