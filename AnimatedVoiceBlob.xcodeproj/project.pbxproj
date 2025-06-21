@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FDF28A62E06B4CD00E8097B /* AnimatedBlob in Frameworks */ = {isa = PBXBuildFile; productRef = 7FDF28A52E06B4CD00E8097B /* AnimatedBlob */; };
 		BBDC9C832974048800E32F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9C822974048800E32F97 /* AppDelegate.swift */; };
 		BBDC9C852974048800E32F97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9C842974048800E32F97 /* SceneDelegate.swift */; };
 		BBDC9C872974048800E32F97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9C862974048800E32F97 /* ViewController.swift */; };
@@ -21,14 +22,10 @@
 		BBDC9D02297411FC00E32F97 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CFD297411FC00E32F97 /* UIView+Extensions.swift */; };
 		BBDC9D03297411FC00E32F97 /* UIStackView+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CFE297411FC00E32F97 /* UIStackView+Spacing.swift */; };
 		BBDC9D04297411FC00E32F97 /* ViewControllerWithStackInScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9CFF297411FC00E32F97 /* ViewControllerWithStackInScroll.swift */; };
-		BBDC9D0C2974123D00E32F97 /* VoiceBlob.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9D062974123D00E32F97 /* VoiceBlob.swift */; };
-		BBDC9D0D2974123D00E32F97 /* BlobNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9D072974123D00E32F97 /* BlobNode.swift */; };
-		BBDC9D0E2974123D00E32F97 /* UIBezierPath+SmoothCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9D092974123D00E32F97 /* UIBezierPath+SmoothCurve.swift */; };
-		BBDC9D0F2974123D00E32F97 /* CALayer+BasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9D0A2974123D00E32F97 /* CALayer+BasicAnimation.swift */; };
-		BBDC9D102974123D00E32F97 /* ConstantDisplayLinkAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDC9D0B2974123D00E32F97 /* ConstantDisplayLinkAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FDF28A32E06B3E200E8097B /* AnimatedBlob */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnimatedBlob; sourceTree = "<group>"; };
 		BBDC9C7F2974048800E32F97 /* AnimatedVoiceBlob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedVoiceBlob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDC9C822974048800E32F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBDC9C842974048800E32F97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,11 +42,6 @@
 		BBDC9CFD297411FC00E32F97 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BBDC9CFE297411FC00E32F97 /* UIStackView+Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Spacing.swift"; sourceTree = "<group>"; };
 		BBDC9CFF297411FC00E32F97 /* ViewControllerWithStackInScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithStackInScroll.swift; sourceTree = "<group>"; };
-		BBDC9D062974123D00E32F97 /* VoiceBlob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceBlob.swift; sourceTree = "<group>"; };
-		BBDC9D072974123D00E32F97 /* BlobNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlobNode.swift; sourceTree = "<group>"; };
-		BBDC9D092974123D00E32F97 /* UIBezierPath+SmoothCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+SmoothCurve.swift"; sourceTree = "<group>"; };
-		BBDC9D0A2974123D00E32F97 /* CALayer+BasicAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+BasicAnimation.swift"; sourceTree = "<group>"; };
-		BBDC9D0B2974123D00E32F97 /* ConstantDisplayLinkAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantDisplayLinkAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,16 +49,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDF28A62E06B4CD00E8097B /* AnimatedBlob in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FDF28A42E06B4CD00E8097B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BBDC9C762974048800E32F97 = {
 			isa = PBXGroup;
 			children = (
+				7FDF28A32E06B3E200E8097B /* AnimatedBlob */,
 				BBDC9C812974048800E32F97 /* AnimatedVoiceBlob */,
+				7FDF28A42E06B4CD00E8097B /* Frameworks */,
 				BBDC9C802974048800E32F97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +84,6 @@
 		BBDC9C812974048800E32F97 /* AnimatedVoiceBlob */ = {
 			isa = PBXGroup;
 			children = (
-				BBDC9D052974123D00E32F97 /* Voice Blob */,
 				BBDC9CFA297411FC00E32F97 /* Utility */,
 				BBDC9CF22974116000E32F97 /* ColorPicker */,
 				BBDC9CE429740F7200E32F97 /* GradientSlider */,
@@ -122,26 +123,6 @@
 				BBDC9CFD297411FC00E32F97 /* UIView+Extensions.swift */,
 				BBDC9CFE297411FC00E32F97 /* UIStackView+Spacing.swift */,
 				BBDC9CFF297411FC00E32F97 /* ViewControllerWithStackInScroll.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		BBDC9D052974123D00E32F97 /* Voice Blob */ = {
-			isa = PBXGroup;
-			children = (
-				BBDC9D062974123D00E32F97 /* VoiceBlob.swift */,
-				BBDC9D072974123D00E32F97 /* BlobNode.swift */,
-				BBDC9D082974123D00E32F97 /* Utility */,
-			);
-			path = "Voice Blob";
-			sourceTree = "<group>";
-		};
-		BBDC9D082974123D00E32F97 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				BBDC9D092974123D00E32F97 /* UIBezierPath+SmoothCurve.swift */,
-				BBDC9D0A2974123D00E32F97 /* CALayer+BasicAnimation.swift */,
-				BBDC9D0B2974123D00E32F97 /* ConstantDisplayLinkAnimator.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -216,18 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBDC9D0E2974123D00E32F97 /* UIBezierPath+SmoothCurve.swift in Sources */,
 				BBDC9CE329740F5D00E32F97 /* GradientSlider.swift in Sources */,
-				BBDC9D0C2974123D00E32F97 /* VoiceBlob.swift in Sources */,
 				BBDC9D03297411FC00E32F97 /* UIStackView+Spacing.swift in Sources */,
 				BBDC9CF82974116000E32F97 /* CustomColorSetterView.swift in Sources */,
-				BBDC9D0F2974123D00E32F97 /* CALayer+BasicAnimation.swift in Sources */,
-				BBDC9D102974123D00E32F97 /* ConstantDisplayLinkAnimator.swift in Sources */,
 				BBDC9D04297411FC00E32F97 /* ViewControllerWithStackInScroll.swift in Sources */,
 				BBDC9C872974048800E32F97 /* ViewController.swift in Sources */,
 				BBDC9D01297411FC00E32F97 /* UIColor+Extension.swift in Sources */,
 				BBDC9CF62974116000E32F97 /* UIAlertController+ColorPicker.swift in Sources */,
-				BBDC9D0D2974123D00E32F97 /* BlobNode.swift in Sources */,
 				BBDC9D00297411FC00E32F97 /* UIAlertController+Extension.swift in Sources */,
 				BBDC9C832974048800E32F97 /* AppDelegate.swift in Sources */,
 				BBDC9CF72974116000E32F97 /* ColorPickerViewController.swift in Sources */,
@@ -377,6 +353,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,6 +380,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,6 +416,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7FDF28A52E06B4CD00E8097B /* AnimatedBlob */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AnimatedBlob;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBDC9C772974048800E32F97 /* Project object */;
 }
