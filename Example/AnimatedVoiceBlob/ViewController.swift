@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AnimatedBlob
 
 final class ViewController: ViewControllerWithStackInScroll {
     private enum PrefferedValues {

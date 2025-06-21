@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AnimatedBlob
 
 protocol CustomColorSetterView: UIView {
   func setNewCustomColor(_ color: UIColor?)
